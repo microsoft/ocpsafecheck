@@ -1,30 +1,16 @@
-# TSA bug filing
+# OCPCheck Compliance tool
 
-TSA bug filing file has been configured: tsaoptions.json. Official builds are required to have TSA bug filing enabled by default. [Learn more](https://aka.ms/OBTSA)
+This tool crawls a directory location and will check the validity of the OCPSafe.JSON against the OCP Safe Shortform report in https://github.com/opencomputeproject/OCP-Security-Safe
 
-# Introduction
+# Prerequisites
 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project.
+1.	Install Powershell v7, by entering in a windows powershell window winget search Microsoft.PowerShell
+2.	If you are not using your machine for git and python then download the clients from https://git-scm.com/downloads and https://www.python.org/
 
-# Getting Started
+# To Run
 
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
+1.  Open a powershell 7 window (pwsh)
+2.  Run the script .\ocpCheckFromFile.ps1.  Parameters are:
+  a. -location which is the location of the artifacts to scan
+  b. -ocpLogOutput which is the output name of the JSON containing the results.  If the parameter is not supplied, the results will be placed in a file called ocpresults.json which will be placed in a directory specified by -location
 
-1. Installation process
-2. Software dependencies
-3. Latest releases
-4. API references
-
-# Build and Test
-
-TODO: Describe and show how to build your code and run the tests.
-
-# Contribute
-
-TODO: Explain how other users and developers can contribute to make your code better.
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
